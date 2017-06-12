@@ -1,22 +1,44 @@
 <!DOCTYPE html>
 <html>
     <head> 
-        <link rel="stylesheet" href="main.css" type="text/css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"> 
+        <link rel="stylesheet" href="css/main.css" type="text/css"/>
         <title>Query Page</title>
+        <meta charset="utf-8"/>
     </head>
     <body>
-        <h1>Query</h1>
-        <h2>Collection:</h2>
-        <form>
-            <input list="collection" name="collection" >
-                <datalist id="collection">
-                  <option value="Resume">
-                  <option value="Handbook">
-                </datalist>
-            <h2>Query Text:</h2>
-            <input id="textbox" type="textarea" name="Query Text:"/>
-            <br>
-            <input type="submit">
-        </form>
+        <header class="heading">
+            <img id="Logo" src="Images/AL.png" alt="AirLiquide Logo">
+            <h1>Watson Query Page</h1>
+        </header>
+        <section class="jumbotron">
+            <div>
+            <div class="col-sm-2" id="filter"> 
+                <h2>Collection:</h2> 
+                <form>
+                    <input id="dropdown" list="collection" name="collection">
+                    <datalist id="collection">
+                        <option value="Resume">
+                        <option value="Handbook">
+                    </datalist>
+                    <br>
+                    <input type="checkbox" name="ch" value="other"> Other
+                    <input type="checkbox" name="ch" value="other"> Other
+                    <input type="checkbox" name="ch" value="other"> Other
+                    <h5>From Date:</h5>
+                    <input type="date" name="From">
+                    <h5>To Date:</h5>
+                    <input type="date" name="From">
+                </form>
+            </div>
+            <div class="col-sm-8">
+               <form>
+                    <h2 id="TEST">Query Text:</h2>
+                    <textarea id="textbox"></textarea> 
+                    <input id="submit" type="submit">
+                </form>
+            </div>  
+            </div>
+        </section>
     </body>
 </html>
