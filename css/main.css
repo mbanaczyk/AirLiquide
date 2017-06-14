@@ -64,6 +64,8 @@ header h1 {
 #filter {
     border: 3px solid #375F9B;
     padding: 10px;
+    width: 200px;
+    height: 275px;
 }
 
 #Logo {
@@ -79,4 +81,8 @@ img {
 
 .datebox{
     border-radius: 8px;
+}
+
+h6{
+    display: inline-block;
 }
